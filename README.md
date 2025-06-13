@@ -10,6 +10,10 @@ There is also a **5 second buffer** between each email sent to not overload serv
 
 Here's a quick walkthrough to help you get started with the tool.
 
+### App Password Setup
+
+First, you'll need to set up a Gmail inbox with 2FA and get an app password. Please consult this link: https://support.google.com/accounts/answer/185833?hl=en for more instructions
+
 ### What You'll Be Prompted For:
 
 1. the email you want to send from
