@@ -1,3 +1,5 @@
+# This is the main tool, please go to the README.md file for more information and instructions! If you run into any issues, please message me on Slack or open an issue on GitHub!
+
 import json
 import time
 import smtplib

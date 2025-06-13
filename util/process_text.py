@@ -38,7 +38,7 @@ for line in lines:
     })
 
 # Export to JSON file
-with open("appraisers_full.json", "w") as f:
+with open("extracted_data.json", "w") as f:
     json.dump(entries, f, indent=4)
 
-print("Conversion complete. JSON saved as 'appraisers_full.json'")
+print("Conversion complete. JSON saved as 'exctracted_data.json'.")

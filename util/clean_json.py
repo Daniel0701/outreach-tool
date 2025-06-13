@@ -8,10 +8,13 @@ with open(input_file, "r") as infile:
 
 cleaned_data = []
 for item in data:
+    first = item.get('First name', '').strip()
+    last = item.get('Last name', '').strip()
+    full_name = f"{first} {last}".strip()
+
     cleaned_item = {
-        'First Name': item.get('First name', ''),
-        'Last Name': item.get('Last name', ''),
-        'Email': item.get('Email address', ''),
+        'Name': full_name,
+        'Email': item.get('Email', ''),
     }
     cleaned_data.append(cleaned_item)
 

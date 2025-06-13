@@ -1,14 +1,43 @@
-Hello! Welcome to the Outreach Tool! This tool is used to automatically send emails out using the SMTP library and Gmail! The daily limit is 500 emails per day, and there is a 5 second buffer between each email sent to not overload servers and not be labelled as spam.
+# Welcome to the Outreach Tool!
 
-This is a quick guide to helping you get used to the tool.
+This tool is used to **automatically send emails** out using the **SMTP library** and **Gmail!** 
 
-First and foremost, the program will prompt you for information:
-- the email you want to send from
-- an app password (you can get this by setting up 2FA, and then getting the app password)
-- the email subject
-- the content of the email (preferably in HTML form)
-- the name of the signature
-- the maximum number of emails to send (1-499)
-- filepath to the json containing contact names to send to
+⚠️ **Gmail's daily limit is 500 emails per day**
 
-Note: the json should at least contain a "Name" parameter as well as an "Email" parameter to get the name and email. 
+There is also a **5 second buffer** between each email sent to not overload servers and prevent spam emails being sent out.
+
+## Quick Guide
+
+Here's a quick walkthrough to help you get started with the tool.
+
+### What You'll Be Prompted For:
+
+1. the email you want to send from
+2. an app password (you can get this by setting up 2FA, and then getting the app password)
+3. the email subject
+4. the content of the email (preferably in HTML form)
+5. the name of the signature
+6. the maximum number of emails to send (1-499)
+7. filepath to the JSON file containing contacts to send emails to
+
+## JSON Format
+
+Your JSON file should contain at least the following fields:
+
+'''json
+{
+    "Name": "Jane Doe",
+    "Email": "janedoe@example.com"
+}
+
+## Util Scripts
+
+There are three python scripts in Util that can help you clean up data.
+
+1. **clean_json.py** will take in a JSON file and extract only the **First name**, **Last name**, and **Email** parameters into a specified output file that contains only **Name** and **Email**.
+2. **process_text.py** takes in a block of text with four parameters (name, location, email, phone) and writes it to a json. This script is pretty niche, and you shouldn't need to use this.
+3. **remove_duplicates.py** takes in a JSON file and removes duplicate items based off the **Name** parameter within a JSON file into a specified output file.
+
+*Please note that 1 and 3 require an input **AND** an output JSON file!*
+
+If you have any issues or questions, either message me on Slack or open a Github issue!
