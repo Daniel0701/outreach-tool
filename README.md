@@ -14,6 +14,8 @@ Here's a quick walkthrough to help you get started with the tool.
 
 First, you'll need to set up a Gmail inbox with 2FA and get an app password. Please consult this link: https://support.google.com/accounts/answer/185833?hl=en for more instructions
 
+*It's recommended that you create a separate Gmail inbox for this.*
+
 ### What You'll Be Prompted For:
 
 1. the email you want to send from
