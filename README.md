@@ -4,7 +4,7 @@ This tool is used to **automatically send emails** out using the **SMTP library*
 
 ⚠️ **Gmail's daily limit is 500 emails per day**
 
-There is also a **5 second buffer** between each email sent to not overload servers and prevent spam emails being sent out.
+There is also a **5 second buffer** between each email sent to not overload servers and prevent spam emails being sent out. Please respect these settings!
 
 ## Quick Guide
 
@@ -12,7 +12,8 @@ Here's a quick walkthrough to help you get started with the tool.
 
 ### App Password Setup
 
-First, you'll need to set up a Gmail inbox with 2FA and get an app password. Please consult this link: https://support.google.com/accounts/answer/185833?hl=en for more instructions
+First, you'll need to set up a Gmail inbox with 2FA and get an app password. Please visit the link below for more instructions:  
+https://support.google.com/accounts/answer/185833?hl=en
 
 *It's recommended that you create a separate Gmail inbox for this.*
 
@@ -30,10 +31,9 @@ First, you'll need to set up a Gmail inbox with 2FA and get an app password. Ple
 
 Your JSON file should contain at least the following fields:
 
-'''json
-{
-    "Name": "Jane Doe",
-    "Email": "janedoe@example.com"
+{  
+    "Name": "Jane Doe",  
+    "Email": "janedoe@example.com"  
 }
 
 ## Util Scripts
