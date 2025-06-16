@@ -1,5 +1,10 @@
 # Welcome to the Outreach Tool!
 
+Before you start, please note that this is a python script! Please visit this link to download Python so that you can run the tool:  
+https://www.python.org/downloads/
+
+Once everything is set, you can run the program by typing 'python outreach_tool.py' into your terminal.  
+
 This tool is used to **automatically send emails** out using the **SMTP library** and **Gmail!** 
 
 ⚠️ **Gmail's daily limit is 500 emails per day**
